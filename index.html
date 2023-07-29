@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Singh - Portfolio</title>
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Lora", serif;
+        background-color: whitesmoke;
+        color: black;
+      }
+
+      .left {
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 8vh;
+        width: 100%;
+        background-color: rgb(230, 217, 217);
+      }
+
+      .right ul {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      .right ul li {
+        list-style: none;
+        margin: 0vh 3vw;
+      }
+
+      .right ul li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .right ul li a:hover {
+        color: rgb(171, 41, 41);
+        font-size: 1.02rem;
+      }
+
+      .section1 {
+        display: flex;
+        justify-content: space-around;
+        margin: 10vh 0vh;
+      }
+
+      .first {
+        font-size: 2.5rem;
+        width: 45vh;
+        margin: 18vh 0vh;
+        margin-left: 10vw;
+      }
+
+      .first > div {
+        width: 100%;
+      }
+
+      #element {
+        color: rgb(207, 138, 19);
+      }
+
+      .second {
+        width: 30%;
+      }
+
+      .second img {
+        height: 100%;
+        width: 100%;
+      }
+
+      main hr {
+        border: 0;
+        background: rgb(168, 100, 100);
+        height: 0.2vh;
+        margin: 5vh 5vw;
+      }
+
+      .section2 {
+        height: 55vh;
+      }
+
+      .section2 h1 {
+        /* max-width: 80vh; */
+        margin-left: 15vw;
+        font-size: 3rem;
+        color: brown;
+      }
+
+      .section2 .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5vw;
+        margin-left: 25vw;
+        margin-top: 7vh;
+      }
+
+      main .programming {
+        font-size: x-large;
+        font-weight: bold;
+        color: rgb(194, 114, 9);
+      }
+
+      main .development {
+        font-size: x-large;
+        font-weight: bolder;
+        color: rgb(194, 114, 9);
+      }
+
+      main .grid ul li {
+        font-size: larger;
+        font-weight: bold;
+        margin-left: 4vw;
+      }
+
+      .section2 .list {
+        margin-top: 1vh;
+      }
+
+      .gray1 {
+        color: gray;
+        margin-left: 15vw;
+        font-size: 0.8rem;
+      }
+
+      .section3 h1 {
+        /* max-width: 80vh; */
+        margin-left: 15vw;
+        font-size: 3rem;
+        color: brown;
+      }
+
+      .gray2 {
+        color: gray;
+        margin-left: 15vw;
+        font-size: 0.8rem;
+      }
+
+      .section3 {
+        height: 65vh;
+      }
+
+      .section3 .project1 h2 {
+        margin-left: 30vw;
+        margin-top: 7vh;
+        color: rgb(194, 114, 9);
+      }
+
+      .section3 a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .section3 a:hover{
+        color: rgb(119, 70, 7);
+      }
+
+      .section3 .project1 p {
+        margin-left: 22vw;
+        /* margin-top: 2vh; */
+        /* font-weight: ; */
+        width: 65vw;
+      }
+
+      .section3 .project3 h2 {
+        margin-left: 30vw;
+        margin-top: 7vh;
+        color: rgb(194, 114, 9);
+      }
+
+      .section3 .project3 p {
+        margin-left: 22vw;
+        /* margin-top: 20px; */
+        /* font-weight: 700px; */
+        width: 65vw;
+      }
+
+      .section3 .project4 h2 {
+        margin-left: 30vw;
+        margin-top: 7vh;
+        color: rgb(194, 114, 9);
+      }
+
+      .section3 .project4 p {
+        margin-left: 22vw;
+        /* margin-top: 20px; */
+        /* font-weight: 700px; */
+        width: 65vw;
+      }
+
+      .section4 h1 {
+        /* max-width: 80vh; */
+        margin-left: 15vw;
+        font-size: 3rem;
+        color: brown;
+      }
+
+      .section4 .flex{
+        height: 65vh;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin: 3vh 0vw;
+      }
+
+      .section4 > .flex > .photo > img{
+        height: 100vh;
+      }
+
+      .section4 .about{
+        font-weight: 550;
+        margin-left: 8vw;
+      }
+
+      .section4 .about .heading{
+          color: red;
+      }
+
+      .section5 h1 {
+        margin-left: 20vh;
+        font-size: 2rem;
+        color: brown;
+      }
+
+      .section5 .flex1 img{
+          height: 9vh;
+      }
+
+      .section5 .flex1{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        height: 10vh;
+        margin-top: 6vh;
+      }
+      .call img{
+        height: 2vh;
+      }
+      .contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+      }
+      .section5 a {
+        color: rgb(255, 146, 3);
+        text-decoration: none;
+      }
+
+      .section5 a:hover{
+        color: rgb(119, 70, 7);
+        font-size: 1.02rem;
+      }
+
+      #newsletter {
+         background-color: #f2f2f2;
+          padding: 5vh 0;
+        }
+
+        .container {
+          max-width: 80vh;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        h2 {
+          margin-bottom: 2vh;
+        }
+
+        form input[type="email"] {
+          width: 30vw;
+          padding: 2vh;
+          border: none;
+          border-radius: 5px;
+          margin-right: 1vw;
+        }
+
+        form button {
+          padding: 2vh 1vw;
+          background-color: #4caf50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        @media (max-width : 1024px) {
+            body{
+                width: 100vw;
+                height: 100%;
+            }
+            .section3 {
+               height: 80vh;
+              }
+              .section4 {
+                height: 390vh;
+              }
+
+      .section5 .flex1 img{
+          height: 10vh;
+      }
+
+      .section5 a {
+        font-size: smaller;
+      }
+
+      .section5 .flex1 .social img{
+        height: 20px;
+      }
+
+      .section5 .flex1 .contact img{
+        height: 20px;
+        margin-left: 10vw;
+      }
+
+      .left{
+        font-size: 2vh;
+        margin-left: 10vw;
+      }
+
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Shivam Singh</div>
+        <div class="right">
+          <ul>
+            <li><a href="#first">Home</a></li>
+            <li><a href="#second">Skills</a></li>
+            <li><a href="#third">Project's</a></li>
+            <li><a href="#forth">About</a></li>
+            <li><a href="#sixth">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section1" id="first">
+        <div class="first">
+          Hi, I am <span style="color: rgb(207, 138, 19)">Shivam Singh</span>
+          <div>I am a Passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="second">
+          <img src="png.webp" alt="Boy coding on PC" />
+        </div>
+      </section>
+
+      <section class="section2" id="second">
+        <hr />
+        <h1>Skills</h1>
+        <span class="gray1">Work in Progress</span>
+        <div class="grid">
+          <div class="programming">Programming Languages</div>
+
+          <div class="development">Web Development</div>
+          <ul>
+            <li>C</li>
+            <li class="list">C++</li>
+          </ul>
+          <ul>
+            <li>HTML</li>
+            <li class="list">CSS</li>
+            <li class="list">Javascript</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section3" id="third">
+        <hr>
+        <h1>Projects</h1>
+        <span class="gray2">More and better to come.</span>
+        <div class="project1">
+          <h2>
+            <a href="https://shivam949singh.github.io/html-Motivation/"
+              >Motivational Quotes Website</a>
+          </h2>
+          <p>
+            This is a website created to motivate people when they are in there
+            low phase of life. Where people need some kind of motivation to kick
+            start their work and succeed in life. Motivation always plays a
+            major role in everyone life and we should always try to motivate
+            people around us.
+          </p>
+        </div>
+        
+
+        <div class="project3">
+          <h2><a href="https://shivam949singh.github.io/weather-application/">Weather Application</a></h2>
+          <p>Created this weather application using HTML, CSS, Javascript. Api is used to fetch information.</p>
+        </div>
+
+        <div class="project4">
+          <h2><a href="https://shivam949singh.github.io/Spotify-Clone/">Spotify Clone</a></h2>
+          <p>Created this Music Clone application using HTML, CSS, Javascript.</p>
+        </div>
+
+      </section>
+
+      <section class="section4" id="forth">
+        <hr>
+        <h1>About Me</h1>
+        <div class="flex">
+          <div class="about">
+            <p> <span class="heading">Introduction:</span> <br>
+              Hello, my name is <span style="color: #fb7e02;">Shivam Singh</span>, and I am a passionate developer. I know programming languages such as C, C++, HTML, CSS, and JavaScript. This allows me to create interactive and engaging web applications. However, my interests and hobbies extend far beyond coding. <br><br>
+              
+              <span class="heading">Hobbies and Interests:</span> <br>
+              One of my greatest passions is <span style="color: #fb7e02;">Traveling</span>. Exploring new places, experiencing different cultures. <br>
+              
+              In my leisure time, I find solace in <span style="color: #fb7e02;">watching movies</span>. I can watch movie of any genre, but mostly i like to watch action thriller movies. <br>
+              
+              <span style="color: #fb7e02;">Sports</span> play a significant role in my life as well. I find joy and camaraderie in playing volleyball, badminton, and cricket. These sports not only keep me physically active but also teach me valuable lessons about teamwork, perseverance, and discipline. I believe that engaging in sports is essential for maintaining a healthy body and mind. <br><br>
+              
+              <span class="heading">Personal Growth:</span> <br>
+              I have a deep thirst for knowledge and a strong desire to learn new things. I approach every opportunity as a chance to expand my skills and broaden my understanding. I am always eager to explore emerging technologies, and innovative approaches. <br>
+              
+              Furthermore, I consider myself a good listener and observer. I believe that truly understanding others and observing the world around me helps me become a better developer and a well-rounded individual. By paying attention to details and actively listening to different perspectives, I can gather insights and perspectives that inform my work and interactions. <br>
+              
+              <span class="heading"><br><br>Conclusion: <br></span>
+              <span class="Summery">In summary, I am Shivam Singh, a dedicated developer with expertise in various programming languages. Beyond coding, my interests include traveling, watching movies, playing sports like volleyball, badminton, and cricket, and embracing personal growth through continuous learning. My ability to listen attentively and observe keenly allows me to navigate the world with curiosity and openness.</p></span>
+          </div>
+          <div class="photo">
+            <img src="shivam.png" alt="Shivam Photo">
+          </div>
+      </div>
+      </section>
+
+      <section id="newsletter" id="fifth">
+        <hr>
+        <div class="container">
+          <h2>Subscribe to my Newsletter</h2>
+          <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section5" id="sixth">
+        <hr>
+        <h1>Contact information</h1>
+
+        <div class="flex1">
+          <div class="social">
+           <a href="https://www.instagram.com/shiv__oom/#"><img src="instagram-17.png" alt="instagram logo"></a>
+            <a href="https://api.whatsapp.com/send?phone=8755778005"><img src="whatsapp.png" alt="whatsapp logo"></a>
+            <a href="https://www.linkedin.com/in/shivam-singh-7a6126246/"><img src="linkedIn_PNG8.png" alt="linkedin logo"></a>
+             <a href="https://github.com/Shivam949Singh"><img src="github.png" alt="github logo"></a>
+          </div>
+          <div class="contact">
+              
+                <div class="call"><a href="tel:+918755778005"><img src="call1.png" alt="call image"></a></div>
+                <div class="email-logo"><a href="mailto:shivam949singh@gmail.com"><img src="email.jpg" alt="email logo"></a></div>
+                <div class="mobile"><a href="tel:+918755778005">+91 87 5577 8005</a></div>
+                <div class="email"><a href="mailto:shivam949singh@gmail.com">shivam949singh@gmail.com</a></div>
+              
+          </div>
+        </div>
+
+        <div class="flex2">
+          <div class="touch"></div>
+          <div class="letter"></div>
+        </div>
+      </section>
+
+      
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Coder",
+          "Traveller",
+          "Cinematic Spectator",
+          "Web Developer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
